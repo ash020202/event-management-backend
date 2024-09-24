@@ -12,6 +12,9 @@ dotenv.config();
 app.get('/', async (req, res) => {
   res.send('This an REST API for an Event App');
 });
+app.get('/health', (req, res) => {
+    res.send('Server is up and running!');
+});
 app.use('/api/events', eventsRouter);
 
 //invalid endpoints
