@@ -18,3 +18,5 @@ eventsRouter.get('/:eventId', getSingleEvent);
 eventsRouter.put('/:eventId', updateEvent);
 
 eventsRouter.delete('/:eventId', deleteEvent);
+
+eventsRouter.get('/health',healthEvent);
